@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cloud"
+    tools:context="com.example.nasa.naavigation.player1Activity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/win"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Victory"
+        android:textAlignment="center"
+        android:textColor="@color/material_drawer_background"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Players 2 Wins!"
+        android:textColor="@color/material_drawer_dark_header_selection_text"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/button3"
+        android:layout_marginBottom="64dp"
+        android:layout_toLeftOf="@+id/textView9"
+        android:layout_toStartOf="@+id/textView9"
+        app:srcCompat="@mipmap/dice1" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_toEndOf="@+id/imageView8"
+        android:layout_toRightOf="@+id/imageView8"
+        app:srcCompat="@mipmap/dice2" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="with"
+        android:textColor="@color/material_drawer_background"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="134dp"
+        android:layout_height="47dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@color/md_cyan_700"
+        android:elevation="10sp"
+        android:text="Play Again"
+        android:textAlignment="center"
+        android:textColor="@color/material_drawer_header_selection_text"
+        android:textSize="18sp" />
+
+</RelativeLayout>

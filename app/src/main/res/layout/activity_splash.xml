@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cloud"
+    tools:context="com.example.nasa.naavigation.SplashActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/dice"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="SansBar"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:text="Presents"
+        android:textColor="@color/material_drawer_dark_header_selection_text"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Random Dice"
+        android:textAlignment="center"
+        android:textColor="@color/md_green_A700"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="432dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gifImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text='"Are you up to the challange"'
+        android:textAlignment="center"
+        android:textColor="@color/material_drawer_background"
+        android:textSize="17sp" />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/fix" />
+
+
+
+</RelativeLayout>

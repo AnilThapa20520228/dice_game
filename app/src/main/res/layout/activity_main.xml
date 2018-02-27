@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nasa.naavigation.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarMain"
+        android:layout_width="450dp"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/material_drawer_selected"
+        android:elevation="10dp"
+        android:textAlignment="center"
+        app:subtitleTextColor="@color/colorPrimaryDark"
+        app:titleTextColor="@color/colorPrimaryDark">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/singleimg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbarMain"
+        android:layout_marginLeft="104dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="102dp"
+        app:srcCompat="@mipmap/dice1" />
+
+    <ImageView
+        android:id="@+id/singleimg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/singleimg2"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_toEndOf="@+id/singleimg2"
+        android:layout_toRightOf="@+id/singleimg2"
+        app:srcCompat="@mipmap/dice2" />
+
+    <Button
+        android:id="@+id/btnroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singleimg2"
+        android:layout_marginTop="26dp"
+        android:layout_toLeftOf="@+id/singleimg1"
+        android:layout_toStartOf="@+id/singleimg1"
+        android:elevation="8dp"
+        android:text="Player 1"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/singleimg1"
+        android:layout_alignRight="@+id/singleimg1"
+        android:layout_alignTop="@+id/btnroll"
+        android:elevation="8dp"
+        android:text="Player 2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/usertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarMain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:textAlignment="center"
+        android:textColor="@color/md_pink_700"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnsingle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/singleimg2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/singleimg2"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text="Play Single Player" />
+
+
+</RelativeLayout>
